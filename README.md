@@ -1,55 +1,28 @@
-# 🐶MEONG-GORITHM PROJECT
+## 안녕하세요 신입 프론트엔드 개발자 조민성 입니다 👋
+#### 클라우드 펀딩 기반 반려동물 케어 서비스 중 반려용품 페이지 소개해드리겠습니다
 
-클라우드 펀딩 기반 반려동물 케어 서비스
+**My Sowft Skill**
+<div>
+<img alt="Static Badge" src="https://img.shields.io/badge/HTML5-aqua">
+<img alt="Static Badge" src="https://img.shields.io/badge/CSS3-yellowgren">
+<img alt="Static Badge" src="https://img.shields.io/badge/Javascript-purple">
+<img alt="Static Badge" src="https://img.shields.io/badge/React.js-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/Node.js-%235f82e3">
+</div>
+<hr/>
 
-## 프로젝트 제작 기간
+**PetProductPage설명**<br/>
+ItemPage.js에 axios 서버에 Get 호출로 PetIem 컴퍼넌트에 product를 props 받아서 구현 됩니다
+<div>
+  <img src="https://github.com/user-attachments/assets/92f38a39-0be8-4374-b2cf-eb8d8c530487" width="500"/>
+  <img src="https://github.com/user-attachments/assets/d06593f2-8e5e-4aa3-b027-553425d9a60b" width="500" />
+</div>
+<hr/>
 
-2024-06-24 ~ 2024-07-31
-
-## 👥MEMBER
-
-|<img src="https://avatars.githubusercontent.com/u/131382518?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/165760077?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/165759863?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/166906722?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/162481265?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/165760131?v=4" width="150" height="150"/>|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|MIN SEONG<br/>[@fjkg33](https://github.com/fjkg33)|YONG HUN<br/>[@magic0224121](https://github.com/magic0224121)|DAEUN<br/>[@downy1218](https://github.com/downy1218)|BEE KYEONG<br/>[@simqlrud](https://github.com/simqlrud)|DAEHO<br/>[@DaeHo-1029](https://github.com/DaeHo-1029)|JAEMIN<br/>[@xxseoxx](https://github.com/xxseoxx)|
-
-
-## ⚙️Stack
-
-_front_ : <img src="https://img.shields.io/badge/html5-E34F26?style=flat&logo=html5&logoColor=white"/>  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=CSS3&logoColor=white"/>  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/react-61DAFB?style=flat&logo=react&logoColor=white"/> 
-
-_back_:  <img src="https://img.shields.io/badge/nodedotjs-5FA04E?style=flat&logo=nodedotjs&logoColor=white"/> <img src="https://img.shields.io/badge/mysql-4479A1?style=flat&logo=mysql&logoColor=white"/>
-
-### `Project LINK`
-
-**sfjisojfckdsjfks**
-
-**아짂 뱁호 않했쓰니 쪽꿈만 긱달렷줏떼요**
-
-
-
-## ✨프로젝트 소개
-
-### **펫 펀딩, 당신의 사랑을 현실로**
-
-
-- 웹 사이트 이름 :  **멍고리즘 Meong-Gorithm**
-
-
-<img src = 'https://github.com/petCareFunding/petCareFunding/blob/main/%EB%A1%9C%EA%B3%A0.jpg' width = '200' height = '200' text-align = 'left'>
-
-- 사이트 제작 동기 : **반려동물과 함께 사는 1인가구 증가**에 따라 20~40대를 타겟으로 반려동물 용품, <br/> 유치원 패키지 상품 펀딩시스템과 장례 서비스를 함께 제공하여 **케어 중심 편의성 제공**을 목적으로 제작
-
-
-- 제공하는 서비스 :  **반려동물 유치원 펀딩참여 기능 / 반려동물 용품 펀딩참여 기능 / 장묘 예약 서비스 / 펀딩 글 등록 기능**
-
-
-## Preview Images
-
-<디자인 수정 완료 후 추가 예정 ...>
-
-
-
-
-## Thank you ! ( •̀ ω •́ )y
-writer:  [@downy1218](https://github.com/downy1218)
-
+**PetProductDetail설명**<br/>
+useEffect제품 데이터를 가져오는 데 효과적으로 사용되고, 오류를 우아하게 처리하며, 기본 로딩 상태를 제공합니다. 위의 제안을 통합하면<br/> 명확성,
+견고성 및 사용자 경험을 더욱 향상시킬 수 있습니다.
+<div>
+  <img src="https://github.com/user-attachments/assets/02d637f1-a2a7-4d34-b667-119310251dab" width="500" />
+  <img src="https://github.com/user-attachments/assets/45486852-325b-4244-b4b3-dfe75aeac4ee" width="500" />
+</div>
