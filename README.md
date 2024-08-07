@@ -1,10 +1,22 @@
-## 안녕하세요 신입 프론트엔드 개발자 조민성 입니다 👋
-#### 클라우드 펀딩 기반 반려동물 케어 서비스
+# 🐶MEONG-GORITHM PROJECT
 
-final project 기간: 24년07월02일~24년07월28일
+클라우드 펀딩 기반 반려동물 케어 서비스
+
+## 프로젝트 기간
+
+24년07월02일~24년07월28일
+
+# 프로젝트 소개
+
+웹사이트 이름: **멍로리즘 Meong-Gorithm**
+
+<img src = 'https://github.com/petCareFunding/petCareFunding/blob/main/%EB%A1%9C%EA%B3%A0.jpg' width = '200' height = '200' text-align = 'left'>
+
+제작동기: **반려동물과 함께 사는 1인가구 증가**에 따라 20~40대를 타켓으로 **케어 중심 편의성 제공** 제작
 
 
-**My Sowft Skill**
+
+## Soft skills
 <div>
 <img alt="Static Badge" src="https://img.shields.io/badge/HTML5-aqua">
 <img alt="Static Badge" src="https://img.shields.io/badge/CSS3-yellowgren">
