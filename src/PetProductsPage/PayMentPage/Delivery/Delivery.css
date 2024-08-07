@@ -1,0 +1,54 @@
+.delivery{width: 100%; margin-bottom: 10px; font-size: 18px; font-weight: bold;}
+.delivery-wrapper{
+    width: 60%;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    background-color: white;
+}
+.delivery-info{
+    width: 40%;
+    text-align: left;
+}
+.delivery-info .delivery-name{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+}
+.delivery-info .delivery-phone{
+    font-size: 16px;
+    color: #a3a3a3;
+    font-weight: 700;
+    padding: 5px;
+}
+.delivery-info .delivery-address{
+    font-size: 16px;
+    color: #a3a3a3;
+    font-weight: 700;
+    padding: 5px;
+}
+.memo{padding: 5px;}
+.memo .memo-title{
+    font-weight: 700;
+    padding: 5px;
+    margin-top: 10px;
+}
+.memo select{
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+}
+@media screen and (max-width: 600px) {
+    .delivery-wrapper{width: 95%; }
+    .memo select{width: 100%;}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .delivery-wrapper{width: 90%; }
+    .memo select{width: 100%;}
+}
+@media screen and (min-width: 1201px) {
+    .memo select{width: 100%;}
+}

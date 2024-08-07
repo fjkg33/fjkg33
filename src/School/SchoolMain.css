@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'April';
+    src: url('../fonts/April16th-ttf/April16thTTF-Life.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'April2';
+    src: url('../fonts/April16th-ttf/April16thTTF-Promise.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'April3';
+    src: url('../fonts/April16th-ttf/April16thTTF-Safety.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+body .schoolmain{
+    background-color: white;
+}
+
+
+.scm-title{
+    /* font-family: 'April', sans-serif; */
+    font-size: 300px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 30px;
+    color: #FFEEAE;
+    cursor: pointer;
+}
+
+.local-search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.local-search{
+    border-radius: 500px;
+    border: solid 1px;
+    width: 500px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.scm-searchbtn{
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+   
+}
+
+.leftphotos{
+
+    width: 400px;
+    height: 300px;
+    border-radius: 100px;
+    margin-left: 400px;
+    margin-top: 50px;
+    object-fit: cover;
+    margin-right: 70px;
+}
+
+.left h4 h2{
+    margin: 0;
+    margin-left: 300px;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+.leftphotos{
+    cursor: pointer;
+}
+.left h2{
+    cursor: pointer;
+}
+
+.scm-text-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.scm-text-container h4{
+    margin-bottom: 20px;
+}
+
+.scm-text-container #scm-funding-people-status{
+    margin-top: 20px;
+}
+
+.scm-text-container #scm-funding-date-status{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.scm-fund{
+    padding-left: 30px;
+}
+
+.scm-footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 0%;
+    margin-top: 30%;
+    background-color:rgba(0, 0, 0, 0.06);
+}
+
+
+
+.scm-sns{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+#scm-postbtn{
+    background-color: white;
+    border: solid 5px #FFEEAE;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+#scm-postbtn:hover{
+    background-color: #FFEEAE;
+    color: black;
+}
+
+
+
+.scm-postbtn-container{
+    display: flex;
+    justify-content: end;
+}
+
+.footer-text-first, .footer-text-second, .footer-text-third{
+    margin-top: 50px;
+}
+
+.footer-text-second{
+    line-height: 33px;
+}
+
+#scm-funding-status{
+    background-color: #FFEEAE;
+    color: black;
+    width: 88px;
+    height: 20px;
+}
+
+
+.scm-user-heart{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#empty-heart{
+    font-size: 20px;
+    padding-left: 3px;
+    cursor: pointer;
+    margin-left: -2px;
+
+} 
+
+
+
+#nado-text{
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+#scm-funding-people-status, #scm-funding-date-status,#scm-heart,#nado-text{
+    font-family: 'April2';
+    font-size: 19px;
+}
+
+.scm-text-container h2{
+    font-family: 'April3';
+    font-size: 30px;
+}

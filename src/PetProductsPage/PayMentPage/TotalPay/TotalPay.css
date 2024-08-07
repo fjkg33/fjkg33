@@ -1,0 +1,116 @@
+.total-payment {
+  width: 60%;
+  height: 300px;
+  background-color: white;
+  margin: 0 auto;
+}
+.total-title{
+  width: 60%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.totalpay {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 10px;
+}
+.totalpay .coupon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.price .price-title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+}
+.price .product-price{
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+.coupon .coupone-name{
+  font-size: 16px;
+  color: #444;
+  font-weight: 700;
+}
+.coupon .product-coupone{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.point .point-name{
+  font-size: 16px;
+  color: #444;
+  font-weight: 700;
+}
+.totalpay .delivery{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  margin-left: 15px;
+  padding: 10px;
+}
+.totalpay .point {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+.point .product-point{font-size: 16px; font-weight: bold;}
+.delivery .delivery-name{
+  font-size: 16px;
+  font-weight: 700;
+  color: #444;
+}
+.delivery .delivery-peice{
+  font-size: 16px;
+  font-weight: 700;
+}
+.totalpay .total{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.total .totalpay-name{
+  font-size: 20px;
+  font-weight: bold;
+}
+.total .total-pay{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px){
+  .total-payment{width: 95%;}
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .total-payment{width: 90%;}
+}
+@media screen and (min-width: 1201px) {
+  .total-payment{width: 60%;}
+}

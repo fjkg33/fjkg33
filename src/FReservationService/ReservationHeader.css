@@ -1,0 +1,25 @@
+.Fheader{
+    margin-top: 50px;
+}
+.Flogo{
+    color: rgb(220, 179, 166);
+    font-size: 50px;
+    display: flex;
+    margin-left: 37%;
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+.FMenu li{
+    list-style-type: none;  
+    display: inline-block;
+    padding: 50px;
+    margin-left: 17%;
+    text-decoration-line: overline;
+    text-decoration-color: rgb(242, 218, 235);
+}
+a{
+    text-decoration-line: none;
+    color: rgb(95, 91, 91);
+    font-weight: bold;
+}
