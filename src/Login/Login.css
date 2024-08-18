@@ -1,0 +1,105 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 600px;
+    height: 800px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 4px gray;
+    border: none;
+}
+.log {
+    margin-top: 110px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.login-container label{
+    margin-left: 80px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.login-input{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 80px;
+    border-radius: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    width: 70%;
+    height: 40px;
+}
+.login-btn{
+    width: 71%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FBE99F;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-container h2{
+    margin-bottom: 20px;
+    margin-left: 270px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.kakao-btn{
+    background-image: url('../../img/kakao-logo.png');
+    background-repeat: no-repeat;
+    background-color:  #FEE500;
+    background-size: 50px;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: 71%;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.naver-btn{
+    background-image: url('../../img/naver-logo.png');
+    background-repeat: no-repeat;
+    background-color: #03c75a;
+    background-size: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 71%;
+    height: 50px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.login-container p{
+    margin-left: 225px;
+}
+.goRegister{
+    margin-top: 15px;
+    margin-left: 260px;
+    color: black;
+    font-weight: bold;
+}
+.login-btn:hover{
+    background-color: #f7df7f;
+}
+
+.message{
+    margin-top: -15px;
+    margin-left: 80px;
+    margin-bottom: 25px;
+    color: rgb(219, 28, 28);
+    font-size: 14px;
+}

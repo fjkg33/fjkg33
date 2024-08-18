@@ -1,0 +1,114 @@
+.image-zigzag {
+  width: 90%;
+  margin: 100px auto;
+}
+.pet-img {
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.pet-img img {
+  width: 50%;
+  border-radius: 20px;
+}
+/* .image-zigzag:nth-child(even) .pet-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+} */
+.image-zigzag:nth-child(odd) .pet-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+li {
+  list-style: none;
+  font-size: 18px;
+  padding: 10px;
+  color: #000;
+}
+.item-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.pet-img:nth-child(even) .item-detail {
+  width: 50%;
+}
+.pet-img:nth-child(odd) .item-detail {
+  width: 50%;
+}
+.funding-title {
+  width: 15%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #FFEEAE;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+.item-detail:nth-child(even) li {
+  margin: 0 auto;
+  text-align: center;
+}
+.FundingPeriod {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+@media screen and (max-width: 600px) {
+  .image-zigzag {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+  }
+  .pet-img {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .pet-img img {
+    width: 100%;
+  }
+  .item-detail {
+    width: 80%;
+    margin-top: 30px;
+  }
+  .item-detail .funding-title {
+    width: 30%;
+  }
+  .image-zigzag:nth-child(odd) .pet-img{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .pet-img {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .pet-img img {
+    width: 90%;
+  }
+  .item-detail {
+    width: 80%;
+    margin-top: 30px;
+  }
+  .item-detail .funding-title {
+    width: 30%;
+  }
+  .image-zigzag:nth-child(odd) .pet-img{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .image-zigzag{width: 90%; margin: 100px auto;}
+}

@@ -1,0 +1,143 @@
+.paymethod{
+  width: 60%;
+  height: 340px;
+  overflow: hidden;
+  background-color: white;
+  margin: 30px auto;
+}
+.method{
+  width: 50%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.payment{
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.card-payment{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.card-payment span{width: 150px;}
+.virtual-account{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.virtual-account span{width: 150px;}
+.Deposit_without_bankbook{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.Deposit_without_bankbook span{width: 150px;}
+.Kakao_Pay{display: flex; align-items: center; width: 50%;}
+.Kakao_Pay span{width: 150px;}
+.bank{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.bank select{
+  width: 60%;
+  height: 30px;
+  margin: 10px auto;
+}
+.bank input{
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .paymethod{
+    width: 95%;
+    overflow: hidden;
+  }
+  .payment{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-payment{
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+  .card-payment span{width: 200px;}
+  .virtual-account{
+    width: 73%;
+    display: flex;
+    align-items: center;
+  }
+  .virtual-account span{width: 240px;}
+  .Deposit_without_bankbook{
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+  .Deposit_without_bankbook span{width: 200px;}
+  .Kakao_Pay{
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+  .Kakao_Pay span{
+    width: 200px;
+  }
+  .bank{
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .paymethod{
+    width: 90%;
+    height: 400px;
+  }
+  .card-payment{
+    width: 65%;
+    padding: 5px;
+  }
+  .card-payment span{width: 200px;}
+  .virtual-account{width: 65%; padding: 5px;}
+  .virtual-account span{width: 200px;}
+  .Deposit_without_bankbook{width: 65%; padding: 5px;}
+  .Deposit_without_bankbook span{width: 200px;}
+  .Kakao_Pay{width: 65%; padding: 5px;}
+  .Kakao_Pay span{width: 200px;}
+  .bank{
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .paymethod{
+    width: 60%;
+    height: 400px;
+  }
+  .card-payment{
+    width: 65%;
+    padding: 5px;
+  }
+  .card-payment span{width: 200px;}
+  .virtual-account{width: 65%; padding: 5px;}
+  .virtual-account span{width: 200px;}
+  .Deposit_without_bankbook{width: 65%; padding: 5px;}
+  .Deposit_without_bankbook span{width: 200px;}
+  .Kakao_Pay{width: 65%; padding: 5px;}
+  .Kakao_Pay span{width: 200px;}
+  .bank{
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+

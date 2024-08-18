@@ -1,0 +1,192 @@
+.Fmain{
+    background-color: rgba(203, 127, 102, 0.55);
+    height: 690px;
+    margin: 50px auto;
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+.img_banner{
+    margin-left: 20px;
+    margin-top: 70px;
+}
+.img_banner img{
+    width: 550px;
+    height:550px;
+}
+.Fbanner{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap:170px;
+    max-width: 1500px;   
+
+}
+.Fbanner-text{
+    display: block;
+    padding: 60px;
+    width: 550px;
+}
+.top_text{
+    display:flex;
+    justify-content: space-between;
+    font-size: 70px;
+    color: rgba(241, 236, 240, 0.897);
+}
+.banner_top{
+    display:flex;
+    justify-content: center;
+    color:rgba(247, 236, 236, 1);
+    font-size: 35px;
+    
+}
+.banner_top2{
+    display:flex;
+    justify-content: center;
+    color:rgba(247, 236, 236, 1);
+    font-size: 35px;
+    
+}
+.bottom_text{
+    display:flex;
+    justify-content: center;
+    font-size: 24px;
+    color: rgba(255, 232, 232, 1);
+    margin-top: 60px;
+}
+.bottom_text2{
+    display:flex;
+    justify-content: center;
+    font-size: 24px;
+    color: rgba(255, 232, 232, 1);
+    margin-top: 20px;
+}
+.Fbtn {
+    background-color:#f7f7f700;
+	border-radius:4px;
+	border:2px solid #f5eef6f9;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffffdc;
+	font-size:20px;
+	padding:13px 38px;
+	text-decoration:none;
+    margin-top: 97px;
+    
+}
+.Fbtn:hover{
+    background-color:#f1ebeed8;
+    color: rgba(203, 127, 102, 0.55);
+}
+.Fbtn:active{
+    background-color: #f1ebeea8;
+    color: rgba(203, 127, 102, 0.332);
+}
+
+
+/* 메인 2 css */
+
+.Fmain2{
+    margin-top: 130px;
+}
+
+.tit{
+    color: rgb(53, 47, 49);
+    font-size: 46px;
+    margin-left: 4%;
+    padding: 20px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+.img_service1{
+    display:block;
+    width: 540px;
+    margin-top: 50px;
+    
+    
+
+}
+.img_service1>img{
+    width: 540px;
+
+}
+.service1{
+    margin-top: -30px;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.Fmain_txt{
+    font-size: 34px;
+    color: rgb(243, 178, 178);
+}
+
+.Fmain_txt2{
+    font-size: 20px;
+    color: rgb(244, 206, 206);
+    margin: 10px;
+}
+.Fmain_txt3{
+    font-size: 14px;
+    color: rgba(124, 120, 120, 0.719);
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.btm_txt{
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(243, 179, 179);
+    margin-top: 8%;
+
+}
+.btm_txt2{
+    font-size: 37px;
+    color: rgb(243, 178, 178);
+    margin-top: 8%;
+}
+
+/* 메인 3 css */
+
+.Fmain3{
+    display: grid;
+    place-content: center;
+    margin-top: -810px;
+}
+.img_service2>img{
+    width: 550px;
+    display: flex;
+    align-items: center;
+}
+.service2{
+    margin-top: -30px;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* 메인 4 css */
+
+.Fmain4{
+    display: grid;
+    place-content:end;
+    margin-top: -728px;
+}
+.img_service3>img{
+    width: 570px;
+}
+.service3{
+    margin-top: -50px;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}

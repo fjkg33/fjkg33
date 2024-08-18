@@ -1,0 +1,33 @@
+/* 푸터 css */
+
+.Ffooter{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 0%;
+    margin-top: 300px;
+    background-color:rgba(231, 194, 194, 0.361);
+}
+.Ffooter-text1{
+    margin-top: 40px;
+}
+.Ffooter-text2{
+    margin-top: 25px;
+    line-height:30px;
+}
+.FFollow{
+    margin-top: 10px;
+    font-size: 60px;
+    color:rgb(247, 160, 154)
+}
+.Fsns{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+}
