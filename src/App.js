@@ -76,8 +76,6 @@ function App() {
           <Route path="/Mypage/editMyInfo" element={<EditInfo userAuthID={userAuthID} />} />
           <Route path='/Mypage' element={<Mypage />} />
           <Route path='/Mypage/Header' element={<MypageHeader />} />
-          <Route path='/Mypage/Wishlist'  element={<Wishlist/>} />
-          <Route path='/Mypage/Withdraw'  element={<Withdraw/>} />
           <Route  path="/Funeral" element={<FuneralContainer/>}></Route>
           <Route  path="/FReservation" element={<ReservationContainer userAuthID={userAuthID}/>}></Route>
           <Route path='/PayMentPage/:userid'  element={<OrderItem/>} />

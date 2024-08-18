@@ -7,7 +7,7 @@ function EditInfo({userAuthID}) {
 
     
     const [postImg, setPostImg] = useState(null);
-    const [preview, setPreview] = useState("/Mypage_img/profileDefault.png");
+    const [preview, setPreview] = useState(null);
     const [befpassword, setBefpassword] = useState('');
     const [aftpassword, setAftpassword] = useState('');
 
@@ -30,7 +30,6 @@ function EditInfo({userAuthID}) {
           .catch(error => {
             console.error('There was an error fetching the user!', error);
           });
-
       }, []);
 
     const handleImageChange = (e)=>{
@@ -81,10 +80,10 @@ function EditInfo({userAuthID}) {
                         <label>전화번호</label>
                         <div className="myinfo-phone-number">
                             <input type="text" maxLength="3" placeholder={phone} />
-                            {/* <span>-</span>
+                            <span>-</span>
                             <input type="text" maxLength="4" placeholder="0000" />
                             <span>-</span>
-                            <input type="text" maxLength="4" placeholder="0000" /> */}
+                            <input type="text" maxLength="4" placeholder="0000" />
                         </div>
                     </div>
 
@@ -114,9 +113,7 @@ function EditInfo({userAuthID}) {
                 </div>
                 <div className="myinfo-profile-section">
                     <div id='myprofile-container'>
-                        <div className='myinfo-circle'>
-                            {<img src = {preview} id='myinfo-changed-photo' />}
-                        </div>
+                        <div className='myinfo-circle'>{<img src = {preview} id='myinfo-changed-photo' />}</div>
                         <label className='myinfo-pickphoto-btn' htmlFor='myprofile'>사진 선택하기</label>
                     </div>
                     <input type='file' id='myprofile' name='myprofile' accept='image/*' 

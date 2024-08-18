@@ -1,50 +1,57 @@
 import React, { useState } from 'react';
 import '../Header/PetHeader.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import MenuIcon from '@mui/icons-material/Menu';
-import { SvgIcon } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close'; 
-import SearchIcon from '@mui/icons-material/Search';
+import mockup from '../mockup';
 
 export default function PetHeader() {
-  const [open, setOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [showResults, setShowResults] = useState(false);
 
-  const toggleMenu = () => {
-    setOpen(!open);
+  const handleInputChange = (event) => {
+    setSearchTerm(event.target.value);
+    if (event.target.value === '') { 
+      setShowResults(false);
+    }
+  };
+
+  const handleIconClick = () => {
+    const results = mockup.filter(item =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setSearchResults(results);
+    setShowResults(true); 
   };
 
   return (
-    
     <div className='header'>
-      <Link to="/"><h1 className='petheader'>MEONG-GORITHM</h1></Link>
-      <div className={`menu ${open ? 'open' : ''}`} onClick={toggleMenu}>
-        {open ? (
-          <SvgIcon component={CloseIcon} inheritViewBox className='icon' /> 
-        ) : (
-          <SvgIcon component={MenuIcon} inheritViewBox className='icon' />
+      <Link to="/"><h1>HAVE A PUPPY DAY</h1></Link>
+      <div className='search-container'>
+        <input
+          type='text'
+          placeholder='용품 검색'
+          value={searchTerm}
+          onChange={handleInputChange} 
+        />
+        <FontAwesomeIcon
+          icon={faSearch}
+          className='icon'
+          onClick={handleIconClick} 
+        />
+        {showResults && (
+          <ul className='search-results'>
+            {searchResults.map(item => (
+              <li key={item.id}>
+                <Link to={`/ItemsPage/${item.id}`}>{item.name}</Link> 
+              </li>
+            ))}
+            {searchResults.length === 0 && ( 
+              <li>검색 결과가 없습니다.</li>
+            )}
+          </ul>
         )}
-      </div>
-      <div className='pet-search'>
-        <input type='text' placeholder='용품검색' />
-        <SvgIcon component={SearchIcon}  inheritViewBox  className='Pet-Search'/>
-      </div>
-
-      <div className={`slide-out-menu ${open ? 'open' : ''}`}>
-        <ul>
-          <li>
-            <Link to="/">홈</Link> 
-          </li>
-          <li>
-            <Link to="/school">유치원 펀딩</Link> 
-          </li>
-          <li>
-            <Link to="/Funeral">장묘예약</Link> 
-          </li>
-          <li>
-            <Link to="/mypage">마이페이지</Link> 
-          </li>
-          
-        </ul>
       </div>
     </div>
   );

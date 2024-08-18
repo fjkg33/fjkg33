@@ -11,11 +11,11 @@ function FFooter(){
         <section className="Ffooter">
         <div className="Ffooter-text1">
                     <p>환불규정</p>
-                    <p><br/>신뢰있는 서비스를 제공할 수 있도록
-                        <br/>소비자기본법에서 정하고 있는 소비자분쟁해결기준을 참고하여 환불 정책을 시행하고 있습니다.</p>
+                    <p><br/>이 상품에 대한 환불은 어쩌구저쩌구 처리해서 이렇게 저렇게 할 거고 
+                        <br/>그 다음엔 요로케 저러케  할 예정입니다</p>
                 </div>
                 <div className="Ffooter-text2">
-                    <p className="Ffooter_txt">서비스 이용약관<br/>
+                    <p>서비스 이용약관<br/>
                         마이데이터 서비스 이용약관<br/>
                         개인정보 처리방침<br/>
                         가맹점 고지사항<br/>

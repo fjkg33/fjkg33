@@ -19,9 +19,8 @@
 
 
 .MainPage{
-    height: 500px;
+    max-height: 500vh;
     z-index: 0.2;
-    overflow-x: hidden;
 }
 
 #field3{
@@ -30,16 +29,17 @@
     z-index: 1;
 }
 .Main-pupday{
-    font-family: 'April2';
+    /* position: absolute; */
     z-index: 5;  
 }
 .Main-pupday p {
     font-size: 280px;
     margin-top: 300px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5),
+                -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
-
 #puppy{
-    font-family: 'April';
+    color: #FFEEAE;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5),
                 -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -48,6 +48,8 @@
     display: flex;
     justify-content: end;
     font-size: 280px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5),
+    -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #para-cat{
@@ -59,6 +61,7 @@
 .MainAllNavs{
     position: relative;
     z-index: 60;
+    /* cursor: pointer; */
 }
 
 
@@ -75,7 +78,6 @@
 
 
 #mypageLink{
-    color: #000000;
     display: flex;
     justify-content: end;
     margin-right: 5px;
@@ -96,51 +98,14 @@
     -1px 1px 0 #0000004b,
     1px 1px 0 #0000004a;
 }
-#schoolLink:hover, #ItemsLink:hover, #funeralLink:hover{
-    font-family: 'April2';
-    color: #000000; 
-    cursor: pointer;
-    text-shadow: -1px -1px 0 #ffffff,  
-    1px -1px 0 #ffffff,
-    -1px 1px 0 #ffffff,
-    1px 1px 0 #ffffff;
+
+
+/*푸터 부분 멍고리즘*/
+.main-footer-title{
+    position: fixed;
+    margin-top: 550px;
+    margin-bottom: 100px;
+    font-size: 100px;
+    z-index: 3;
+    offset: 1;
 }
-
-
-/*헤더 부분 멍고리즘*/
-#main-footer-title{
-    font-family: 'April';
-    /* position: fixed; */
-    margin-top: 30px;
-    margin-left: 850px;
-    font-size: 85px;
-    /* z-index: 3; */
-}
-#main-footer-title2{
-    font-family: 'April';
-    margin-top: 30px;
-    margin-left: 1310px;
-    font-size: 50px;
-}
-
-
-
-.sc-text {
-    position: absolute;
-    font-family: 'April2';
-    font-size: 25px;   
-    color: rgb(255, 255, 255);
-    animation: animate_text 15s linear infinite;  
-    padding-bottom: 20px;
-    margin-left: 680px;
-    margin-top: 590px;
-}
-
-  @keyframes animate_text {
-    from {
-      transform: translate3d(400%,0,0);
-    }
-    to {
-      transform: translate3d(-400%,0,0);
-    }
-  }

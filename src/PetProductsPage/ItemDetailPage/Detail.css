@@ -1,95 +1,177 @@
-.Detail-wrapper{
+.item-wrapper{
   width: 100%;
-  margin-top: 50px;
 }
-.detail-info{
+.itemdetail{
   width: 100%;
   margin-top: 100px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  flex-direction: row;
 }
-.detail-info img{width: 40%; border-radius: 20px;}
-.detail-text{
-  width: 100%;
-}
-.detail-text .detail-title{
-  width: 100%;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px;
-  font-family:  NOTO Sans Lemon;
-}
-.detail-text .detail-funding{
-  font-size: 18px;
-  padding: 10px;
-  font-weight: 600;
-  font-family: Lemon;
-}
-.detail-text span{margin-right: 20px; font-weight: 600;}
-.detail-text .detail-personnel{
-  font-size: 20px;
-  padding: 10px;
-  font-family: Lemon;
-}
-.detail-text .detail-price{
-  font-size: 20px;
-  padding: 10px;
-  font-family: Lemon;
-}
-.detail-text .pay-button{
-  width: 40%;
-  font-size: 20px;
-  padding: 10px;
-  background-color: #FFEF9E;
+.itemdetail img{
+  width: 45%;
+  height: 450px;
   border-radius: 20px;
-  text-align: center;
-  margin-top: 20px;
-  cursor: pointer;
 }
-.pay-button:hover{color:  red;}
-.detail{
-  width: 100%;
+.item-txt{
+  width: 50%;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  align-items: self-start;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
 }
-.detail img{width: 60%; margin: 0 auto;}
+.item-txt .Supplies{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+.Funding-progress{
+    font-size: 18px;
+    padding: 10px;
+    font-family: Lemon;
+    font-weight: bold;
+}
+.Funding-progress span{margin-right: 20px; }
+.funding-pepole {
+  font-size: 18px;
+  padding: 10px;
+  font-family: Lemon;
+  font-weight: bold;
+}
+.funding-pepole span{margin-right: 20px;}
+.detail-image{
+    width: 40%;
+    margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+}
+.option-title{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.funding-option{
+  width: 100%;
+height: 200px;
+  display: flex;
+  position: relative;
+}
+.funding-option > div {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  padding: 15px;
+  cursor: pointer;
+  box-sizing: border-box; 
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-@media screen and (max-width: 600px){
-  .detail-info{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .detail-info img{width: 90%; margin-bottom: 20px;}
-  .detail-text{width: 80%; margin: 0 auto;}
-  .detail-text .detail-title{width: 70%; margin: 0 auto;}
-  .detail-text .detail-funding{width: 70%; margin: 0 auto; font-weight: 600;}
-  .detail-text .detail-personnel {width: 70%; margin: 0 auto;}
-  .detail-text .detail-price {width: 70%; margin: 0 auto;}
-  .detail-text .pay-button{margin: 20px auto;}
-  .detail img{width: 90%;}
+
+.funding-option > div.selected {
+  background-color:  #D4AF37; 
 }
-@media screen and (min-width: 601px) and (max-width: 1200px){
-  .detail-info{
-    width: 100%;
+.funding-shop{
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.funding-shop .funding-but{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #D4AF37;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.funding-but:hover{color: white;}
+
+@media screen and (max-width: 600px) {
+  .itemdetail{
     display: flex;
     flex-direction: column;
   }
-  .detail-info img{width: 90%; margin-bottom: 20px;}
-  .detail-text{width: 70%; margin: 0 auto;}
-  .detail-text .detail-title{width: 100%; margin: 0 auto;}
-  .detail-text .detail-funding{width: 100%; margin: 0 auto; font-weight: 600;}
-  .detail-text .detail-personnel{width: 100%; margin: 0 auto; font-weight: 600;}
-  .detail-text .detail-price{width: 100%; margin: 0 auto; font-weight: 600;}
-  .pay-button{margin: 0 auto;}
-  .detail img{width: 90%;}
+  .itemdetail img{
+    width: 95%;
+    height: 300px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .option-title{margin-left: 40px; margin-bottom: 10px;}
+  .item-txt{width: 90%; margin: 0 auto;}
+  .funding-option{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .funding-shop{margin-top: 270px;}
+  .detail-image{width: 100%;}
+}
+@media screen and (max-width: 600px) {
+  .itemdetail{
+    display: flex;
+    flex-direction: column;
+  }
+  .itemdetail img{
+    width: 95%;
+    height: 300px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .option-title{margin-left: 40px; margin-bottom: 10px;}
+  .item-txt{width: 90%; margin: 0 auto;}
+  .item-txt .Supplies{
+    width: 85%;
+    text-align: left;
+    font-weight: 500;
+  }
+  .Funding-progress span{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .funding-pepole{font-size: 18px; font-weight: 500;}
+  .funding-option{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .funding-shop{margin-top: 270px;}
+  .detail-image{width: 100%;}
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .itemdetail{
+    display: flex;
+    flex-direction: column;
+  }
+  .itemdetail img{
+    width: 95%;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+  .option-title{margin-left: 40px; margin-bottom: 10px; text-align: left; width: 60%;}
+  .item-txt{width: 90%; margin: 0 auto;}
+  .funding-option{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .funding-shop{margin-top: 100px;}
+  .detail-image{width: 50%;}
+  .item-txt .Supplies{width: 100%; font-size: 18px; font-weight: 600;}
+  .item-txt .Funding-progress{width: 40%;margin-left: 5px;  font-size: 18px; font-weight: 600; margin: 0 auto;}
+  .item-txt .funding-pepole{width: 30%;  font-size: 18px; font-weight: 600; margin: 0 auto;}
 }
 @media screen and (min-width: 1201px) {
-  .detail-text{width: 35%;}
-  .detail-text .detail-funding{width: 100%; margin: 0 auto; font-weight: 600;}
-  .detail-text .detail-personnel{width: 100%; margin: 0 auto; font-weight: 600;}
-  .detail-text .detail-price{width: 100%; margin: 0 auto; font-weight: 600;}
-  .detail img{width: 50%;}
+.item-txt .Supplies{
+  width: 400px;
+  text-align: left;
+}
+
 }

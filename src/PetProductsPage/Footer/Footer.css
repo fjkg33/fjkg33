@@ -15,7 +15,7 @@
     padding: 5px;
     cursor: pointer;
     width: 100%;
-    /* background-color: #FFEEAE; */
+    background-color: #FFEEAE;
     justify-content: space-around;
 }
 @media screen and (max-width:600px){

@@ -74,11 +74,11 @@
     margin-top: 97px;
     
 }
-.Fbtn:hover{
+.btn:hover{
     background-color:#f1ebeed8;
     color: rgba(203, 127, 102, 0.55);
 }
-.Fbtn:active{
+.btn:active{
     background-color: #f1ebeea8;
     color: rgba(203, 127, 102, 0.332);
 }

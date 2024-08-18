@@ -5,8 +5,6 @@ import { Routes, Route, Link } from 'react-router-dom';
 import schoolMockup from "./SchoolMockup.js";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { SvgIcon } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
 
 
 function SchoolDetail(){
@@ -49,9 +47,9 @@ function SchoolDetail(){
     return(
         <div>
             <header className="scm-title" onClick={GotoMainpage}>MEONG-GORITHM</header>
-            <div className="local-search-container2">
-                <input type="search" className="local-search2" placeholder="지역 검색하기.." />
-                <SvgIcon component={SearchIcon}  inheritViewBox  className='school-Search'/>
+            <div className="local-search-container">
+                <input type="search" className="local-search" placeholder="지역 검색하기.." />
+                <img src={imgURL_schoolImageURL} alt="돋보기아이콘" className="scm-searchbtn"></img>
             </div>
             <hr/>
 
@@ -65,7 +63,7 @@ function SchoolDetail(){
                     <img className="school_img" src = {imgURL_schoolSub3ImageURL} alt="홍보팜플렛3"></img>
                 </div>
                 <div className="order_container">
-                    <p className="p_right">{startDate.substr(0,10)} ~ {endDate.substr(0,10)}</p>
+                    <p className="p_right">{startDate} ~ {endDate}</p>
                     <p className="p_left">펀딩인원</p>
                     <p className="p_right">{personnelStatus}</p>
                     <p className="p_left">목표인원</p>
@@ -76,11 +74,11 @@ function SchoolDetail(){
                         <button className="school_like"><p>❤️</p><p>{content.like}</p></button>
                         <span className="school_btn_size"><button className="school_btn">예약 구매하기</button></span>
                     </p>
-                    <p className="school_company">담당자: {writer}</p>
+                    <p className="school_company">회사명: {writer}</p>
                 </div>
             </div>
         </div>
-            
+            {/* 
             
 
 
@@ -97,12 +95,12 @@ function SchoolDetail(){
                         가맹점 고지사항<br/>
                         위치기반서비스 이용약관</p>
                 </div>
-                {/* <div className="footer-text">
+                <div className="footer-text">
                     <h3>Follow us</h3>
                     <img src={process.env.PUBLIC_URL + './insta.png'} className="sns" alt="인스타"></img>
                     <img src={process.env.PUBLIC_URL + './facebook.png'} className="sns" alt="페이스북"></img>
-                </div> */}
-            </footer>      
+                </div>
+            </footer>      */}
         </div>
         
     )

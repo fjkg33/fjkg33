@@ -86,7 +86,7 @@ function SchoolMain(){
                             <h4 id="scm-funding-status">펀딩 진행중</h4>
                             <h2 onClick={()=>goDetail(school.schoolprodid)}>{school.schoolname}</h2>
                             <p id="scm-funding-people-status">펀딩인원<span className="scm-fund scm-People">{school.personnelStatus}</span></p>
-                            <p id="scm-funding-date-status">펀딩기간<span className="scm-fund scm-Date">{school.startDate.substr(0,10)}부터 {school.endDate.substr(0,10)}까지</span></p>
+                            <p id="scm-funding-date-status">펀딩기간<span className="scm-fund scm-Date">{school.startDate}부터 {school.endDate}까지</span></p>
                             <p id="scm-heart">💛 현재 {likes[index]}명이 찜했어요!</p>
                             <div className="scm-user-heart">
                                 <span

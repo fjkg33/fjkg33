@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Register.css';
-import DaumPostcode from 'react-daum-postcode';
 import { useNavigate } from 'react-router-dom';
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
@@ -14,27 +13,14 @@ const Register = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [passwordType, setPasswordType] = useState({ type: 'password', visivle: false});
   const [passwordConfirmType, setPasswordConfirmType] = useState({ type: 'password', visivle: false});
-  const [address, setAddress] = useState('');
-  const [detailAddress, setDetailAddress] = useState('');
-  const [zip, setZip] = useState('');
-  const [isPostcodeOpen, setIsPostcodeOpen] = useState(false);
   const [isUsername, setIsUsername] = useState(false);
   const [isUserRealname, setIsUserRealname] = useState(false);
   const [isPhone, setIsPhone] = useState(false);
-  const [isZip, setIsZip] = useState(false);
-  const [isDetailAddress, setIsDetailAddress] = useState(false);
   const [isPassword, setIsPassword] = useState(false);
   const [isConfirmPassword, setIsConfirmPassword] = useState(false);
 
 
   const navigate = useNavigate();
-
-  const handlePostcodeComplete = (data) => {
-    // 주소 선택 시 호출되는 함수
-    setAddress(data.address);
-    setZip(data.zonecode);
-    setIsPostcodeOpen(false); // 주소 입력 창 닫기
-};
 
   const usernameMes = () =>{
     return isUsername === false ? 'register-username-alert' : 'register-username-alert-view';
@@ -46,12 +32,6 @@ const Register = () => {
   const phoneMes = () =>{
     return isPhone === false ? 'register-phone-alert' : 'register-phone-alert-view';
   }
-  const zipMes = () =>{
-    return isZip === false ? 'register-zip-alert' : 'register-zip-alert-view';
-  }
-  const detailAddressMes = () =>{
-    return isDetailAddress === false ? 'register-detailAddress-alert' : 'register-detailAddress-alert-view';
-  }
   const passwordMes = () =>{
     return isPassword === false ? 'register-password-alert' : 'register-password-alert-view';
   }
@@ -62,45 +42,60 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    
+    setUsername(username);
+    const usernameRegExp = /^[a-zA-z0-9]{6,12}$/;
+ 
 
-    const usernameRegExp = /^[a-zA-Z0-9]{6,12}$/;
+    setUserRealname(userRealname);
+
+    setPhone(phone);
     const phoneRegExp = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
-    const passwordRegExp = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
 
-    const isUsernameValid = usernameRegExp.test(username);
-    const isUserRealnameValid = !!userRealname;
-    const isPhoneValid = phoneRegExp.test(phone);
-    const isZipValid = !!zip;
-    const isDetailAddressValid = !!detailAddress;
-    const isPasswordValid = passwordRegExp.test(password);
-    const isConfirmPasswordValid = password === confirmPassword;
 
-    // 유효성 검사 결과 업데이트
-    setIsUsername(!isUsernameValid);
-    setIsUserRealname(!isUserRealnameValid);
-    setIsPhone(!isPhoneValid);
-    setIsZip(!isZipValid);
-    setIsDetailAddress(!isDetailAddressValid);
-    setIsPassword(!isPasswordValid);
-    setIsConfirmPassword(!isConfirmPasswordValid);
+    setPassword(password);
+    const passwordRegExp =
+      /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
+    
+  
+    setConfirmPassword(confirmPassword);
 
-    // 모든 필드가 유효할 때만 API 요청
-    if (isUsernameValid && isUserRealnameValid && isPhoneValid && isZipValid && isDetailAddressValid && isPasswordValid && isConfirmPasswordValid) {
-      try {
-        const response = await axios.post('http://localhost:5000/register', {
-          username,
-          userRealname,
-          phone,
-          zip,
-          address: `${address}, ${detailAddress}`,
-          password,
-        });
+
+    try {
+      const response = await axios.post('http://localhost:5000/register', { username, userRealname, phone,
+        password, confirmPassword });
         console.log('Registration successful', response.data);
-        navigate('/login');
-      } catch (error) {
-        console.error('Registration failed', error.response ? error.response.data : error.message);
+        navigate('/login'); 
+      
+    } catch (error) {
+      console.error('Registration failed', error);
+      if (!usernameRegExp.test(username)) {
+        setIsUsername(true);
+      } else{
+        setIsUsername(false);
       }
+      if (!userRealname) {
+        setIsUserRealname(true);
+      } else {
+        setIsUserRealname(false);
+      }
+      if (!phoneRegExp.test(phone)) {
+        setIsPhone(true);
+      } else {
+        setIsPhone(false);
+      }
+      if (!passwordRegExp.test(password)) {
+        setIsPassword(true);
+      } else {
+        setIsPassword(false);
+      }
+      if (password !== confirmPassword || !confirmPassword) {
+        setIsConfirmPassword(true);
+        return;
+      } 
+      else{
+        setIsConfirmPassword(false);
+      }
+      return;
     }
   };
 
@@ -153,27 +148,6 @@ const Register = () => {
             setPhone(e.target.value)} className='register-input'/>
         </div>
         <p className={phoneMes()}>전화번호를 입력해주세요.</p>
-        <label>우편번호</label>
-        <div>
-            <input type="text" value={zip} placeholder='우편번호' readOnly className='register-zip-input' />
-            <button type="button" onClick={() => setIsPostcodeOpen(true)} className='post-open-btn'>주소 검색</button>
-        </div>
-        <p className={zipMes()}>우편번호를 입력해주세요.</p>
-        <label>주소</label>
-            <div>
-                <input type="text" value={address} placeholder='주소를 입력하세요' readOnly onClick={() => setIsPostcodeOpen(true)} className='register-input' />
-            </div>
-            {isPostcodeOpen && (
-                <div style={{ position: 'absolute', zIndex: 100 }}>
-                    <DaumPostcode onComplete={handlePostcodeComplete} autoClose />
-                    <button onClick={() => setIsPostcodeOpen(false)} className='post-close-btn'>닫기</button>
-                </div>
-            )}    
-        <div>
-        <input type="text" value={detailAddress} placeholder='상세 주소를 입력하세요.' onChange={(e) => 
-            setDetailAddress(e.target.value)} className='register-input'/>
-        </div>
-        <p className={detailAddressMes()}>상세 주소를 입력해주세요.</p>
         <label>비밀번호</label>
         <div>
           <input type={passwordType.type} value={password} placeholder='비밀번호를 입력하세요' onChange={(e) => 

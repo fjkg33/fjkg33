@@ -1,16 +1,17 @@
 import './ReservationHeader.css'
-import { useNavigate } from 'react-router-dom';
-
 
 export default function ReservationHeader() {
-    const navigate = useNavigate();
-    const GotoMainpage = () =>{navigate('/')};
+
     return(
-        
         <div className="Fheader">
             <div className="TopHeader">
-                <div className="Flogo" onClick={GotoMainpage}>MEONG-GORITHM</div>
-
+                <div className="Flogo">MEONG-GORITHM</div>
+                <nav className="subMenu">
+                    <ul>
+                        <li><a href="/select" >찜</a></li>
+                        <li><a href="/mypage">마이페이지</a></li>
+                    </ul>
+                </nav>
             </div>
             <nav className="FMenu">
                 <ul>

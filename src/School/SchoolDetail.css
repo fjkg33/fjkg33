@@ -15,11 +15,6 @@
     color: #FFEEAE;
     cursor: pointer;
 }
-.school_funding_page h1{
-    margin-top: 20px;
-    font-family: 'April2', sans-serif;
-    text-align: center;
-}
 
 .scm-searchbtn{
     width: 30px;
@@ -39,23 +34,18 @@
     height: 25px;
     padding-left: 10px;
 }
-.school-Search{
-    margin-bottom: 30px;
-}
-.local-search-container2{
+.local-search-container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
 }
-.local-search2{
+.local-search{
     border-radius: 500px;
     border: solid 1px;
     width: 500px;
     height: 25px;
     padding-left: 10px;
-    margin: 0px;
-    margin-bottom: 30px;
 }
 
 .school_funding{
@@ -92,7 +82,6 @@
     margin: 5px 0;
 }
 .p_right {
-    margin-left: 80px;
     font-size: large;
     font-weight: bold;
 }
@@ -111,10 +100,9 @@
     font-size: small;
 }
 .school_btn {
-    height: 40px;
-    width: 120px;
+    height: 80px;
     top: 50px;
-    padding: 0px 0px;
+    padding: 0px 60px;
     margin-left: 20px;
     background-color: #FFEEAE;
     border: none;
@@ -124,7 +112,7 @@
     background-color: rgb(223, 233, 233);
 }
 .school_btn_size{
-    width: 100px;
+    width: 80%;
 }
 .order_container{
     display: flex;
