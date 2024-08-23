@@ -9,7 +9,7 @@ const PetItemspage = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("http://43.201.148.90 :3000/products")
+      .get("http://3.36.88.242:3000/products")
       .then((response) => {
         console.log("response.data:", response.data)
         setProducts(response.data);
