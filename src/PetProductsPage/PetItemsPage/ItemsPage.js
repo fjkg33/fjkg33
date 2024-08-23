@@ -3,14 +3,13 @@ import PetHeader from "../Header/PetHeader";
 import "./PetItemspage.css";
 import PetItem from "../PetItems/Items";
 import Footer from "../Footer/Footer";
-// import mockup from "../mockup";
 import axios from "axios";
 
 const PetItemspage = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get("http://43.201.148.90 :3000/products")
       .then((response) => {
         console.log("response.data:", response.data)
         setProducts(response.data);
