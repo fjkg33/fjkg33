@@ -13,7 +13,7 @@ export default function PetItem({ product }) {
     prodid
   );
   // ./public/img/dogFood.jpg
-  const imgURL_full = `http://43.201.148.90 :3000/${prodImageURL}`; // http://localhost:5000/dogFood.jpg
+  const imgURL_full = `http://3.36.88.242:3000/${prodImageURL}`; // http://localhost:5000/dogFood.jpg
 
   return (
     <div className="image-zigzag">
